@@ -1,6 +1,8 @@
-// LEDBlinker library
-// copyright Dave Sieh, 2013
-// This code is public domain, enjoy!
+// LEDBlinker Arduino Library
+//
+// Copyright (c) 2013 Dave Sieh
+// See LICENSE.txt for details.
+//
 
 #ifndef _LEDBlinker_h_
 #define _LEDBlinker_h_

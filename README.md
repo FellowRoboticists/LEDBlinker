@@ -30,3 +30,9 @@ Example usage:
       delay(500);
     }
 
+Copyright
+=========
+
+Copyright (c) 2013 Dave Sieh
+
+See LICENSE.txt for details.

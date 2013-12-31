@@ -1,4 +1,9 @@
 // -*- c -*-
+// LEDBlinker Arduino Library
+//
+// Copyright (c) 2013 Dave Sieh
+// See LICENSE.txt for details.
+//
 #include <LEDBlinker.h>
 
 // Declare a blinker and let it know it should be using
