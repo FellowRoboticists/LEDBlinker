@@ -1,11 +1,12 @@
 // LEDBlinker Arduino Library
 //
-// Copyright (c) 2013 Dave Sieh
+// Copyright (c) 2013,2014 Dave Sieh
 // See LICENSE.txt for details.
 //
 
 #include <Arduino.h>
 #include "LEDBlinker.h"
+#include "pspc_support.h"
 
 LEDBlinker::LEDBlinker(int ledPin) {
   pin = ledPin;
@@ -25,8 +26,10 @@ void LEDBlinker::blinkNumber(int number) {
 }
 
 void LEDBlinker::flash(int percent) {
-  Serial.print(", flash percent = ");
+#ifdef LEDBLINKER_DEBUG
+  Serial.print(P(", flash percent = "));
   Serial.println(percent);
+#endif
   const int duration = 1000;
   // Blink the LED
   digitalWrite(pin, HIGH);
